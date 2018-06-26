@@ -36,6 +36,7 @@ public class CheckSentence
         int prev_state = 0, curr_state = 0, quote_count = 0;
         //Loop to go over the string.
         for(int index = 1; index < len ; index++) {
+            curr_state = 0;
             // Set states according to the input characters in the
             // string and the rules defined in the description.
             if (str[index] == '\"') {
